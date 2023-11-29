@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ e5.cpp ; ./a.out
