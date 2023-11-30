@@ -1,3 +1,8 @@
 #!/bin/bash
 
-g++ e5.cpp ; ./a.out
+
+VAR_1=$(ls -lt | grep ".cpp" | awk '{print $9}' | head -n 1)
+
+g++ $VAR_1
+./a.out
+rm a.out
